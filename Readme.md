@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вячеслав Козаченко](https://up.htmlacademy.ru/htmlcss/32/user/1858125).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
