@@ -1,0 +1,104 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+/* Стили для основной страницы */
+
+.promo-welcome {
+  width: 1200px;
+  height: 485px;
+  background: #83B3D3 url("../img/img-main/promo-background.jpg") no-repeat;
+}
+
+.promo-description {
+  width: 1200px;
+  height: 282px;
+  background: #FFFFFF;
+}
+
+.main-header,
+.main-footer {
+  background: #FFFFFF;
+}
+
+.advantages ol,
+.advantages-list ul {
+  list-style: none;
+}
+
+.card-blue-text {
+  color: #FFFFFF;
+  background: #83B3D3;
+}
+
+.card-gray {
+  color: #000000;
+  background: rgba(151, 207, 245, 0.2);
+}
+
+.hotels::before {
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 72px;
+  background: url("../img/img-main/icon-hotels.svg");
+}
+
+.card-white {
+  background: #FFFFFF;
+}
+
+.card-white::before {
+  content: "";
+  display: inline-block;
+  width: 74px;
+  height: 70px;
+  background: url("../img/img-main/icon-food.svg");
+}
+
+.souvenirs::before {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 76px;
+  background: url("../img/img-main/icon-souvenirs.svg");
+}
+
+.card-light {
+  color: #000000;
+  background: rgba(131, 179, 211, 0.12)
+}
+
+.hotel-search {
+  width: 1200px;
+  height: 417px;
+  background: #FFFFFF;
+}
+
+.subscribe-main {
+  color:#FFFFFF;
+  width: 1200px;
+  height: 411px;
+  background: #83B3D3 url("../img/img-main/subscribe-background.jpg") no-repeat;
+}
+
+/* Стили для каталога */
+
+.hotel-filter {
+  color: #FFFFFF;
+  width: 1200px;
+  height: 408px;
+  background: #83B3D3 url("../img/img-catalogue/filter-background.jpg") no-repeat;
+}
+
+.subscribe-inner {
+  color:#000000;
+  background: #FFFFFF;
+}
