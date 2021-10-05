@@ -1,3 +1,20 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,6 +27,51 @@
 }
 
 /* Стили для основной страницы */
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-header,
+.main-footer {
+  background: #FFFFFF;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+button,
+.subscribe-submit {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.search-button,
+.favourite-button {
+  background-color: transparent;
+}
+
+.buttons-list .wish-button {
+  font-size: 16px;
+  width: 160px;
+  height: 37px;
+  background-color: #756257;
+  border-radius: 4px;
+}
 
 .promo-welcome {
   width: 1200px;
@@ -23,14 +85,38 @@
   background: #FFFFFF;
 }
 
-.main-header,
-.main-footer {
-  background: #FFFFFF;
+.promo-description h1 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo-description p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
 }
 
 .advantages ol,
 .advantages-list ul {
   list-style: none;
+}
+
+.advantages-list h3,
+.advantages-list h4 {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-list p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .card-blue-text {
@@ -82,11 +168,78 @@
   background: #FFFFFF;
 }
 
-.subscribe-main {
-  color:#FFFFFF;
+.hotel-search h2,
+.subscribe h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-search p,
+.subscribe p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.hotel-search .hotel-button {
+  font-size: 20px;
+  width: 575px;
+  height: 60px;
+  background: #756257;
+  border-radius: 10px;
+}
+
+.subscribe {
   width: 1200px;
   height: 411px;
-  background: #83B3D3 url("../img/subscribe-background.jpg") no-repeat;
+}
+
+.subscribe-main {
+  color:#FFFFFF;
+  background: #b5babd url("../img/subscribe-background.jpg") no-repeat;
+}
+
+.subscribe .subscribe-submit {
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.subscribe .subscribe-field {
+  width: 600px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color:rgba(0, 0, 0, 0.6);
+}
+
+.main-footer .social-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer .academy-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-footer .academy-phone:hover {
+  color: #756257;
 }
 
 /* Стили для каталога */
@@ -94,8 +247,164 @@
 .hotel-filter {
   color: #FFFFFF;
   width: 1200px;
-  height: 408px;
   background: #83B3D3 url("../img/filter-background.jpg") no-repeat;
+}
+
+.hotel-filter h1 {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-list a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.group-title {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.group-list-item span,
+.catalogue-price-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalogue-price-label span {
+  opacity: 0.3;
+}
+
+.catalogue-price-input {
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.catalogue-button-accept,
+.catalogue-button-reset {
+  width: 160px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.catalogue-button-accept {
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #83B3D3;
+}
+
+.catalogue-button-reset {
+  font-weight: 400;
+  font-size: 18px;
+  background: transparent;
+}
+
+.hotel-sorting h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.catalogue-cards-list,
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-item a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.card-description .about-button {
+  display: table-cell;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 151px;
+  height: 37px;
+  background: #756257;
+  border-radius: 4px;
+}
+
+.card-description .to-favourite,
+.catalogue-cards .more-cards {
+  display: table-cell;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 160px;
+  height: 37px;
+  background: #83B3D3;
+  border-radius: 4px;
+}
+
+.card-description .out-favourite {
+  background: #7DB54F;
+}
+
+.card-description p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.card-rating p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 160px;
+  height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalogue-cards .more-cards {
+  font-size: 20px;
+  width: 625px;
+  height: 55px;
+  text-decoration: none;
+}
+
+.pagination-list .pagination-link {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 55px;
+  height: 55px;
+  background: #83B3D3;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.pagination-list .pagination-current {
+  color: #000000;
+}
+
+.cards-quantity .quantity-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
 }
 
 .subscribe-inner {
