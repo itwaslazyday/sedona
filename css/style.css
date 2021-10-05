@@ -14,7 +14,7 @@
 .promo-welcome {
   width: 1200px;
   height: 485px;
-  background: #83B3D3 url("../img/img-main/promo-background.jpg") no-repeat;
+  background: #83B3D3 url("../img/promo-background.jpg") no-repeat;
 }
 
 .promo-description {
@@ -48,7 +48,7 @@
   display: inline-block;
   width: 75px;
   height: 72px;
-  background: url("../img/img-main/icon-hotels.svg");
+  background: url("../img/icon-hotels.svg");
 }
 
 .card-white {
@@ -60,7 +60,7 @@
   display: inline-block;
   width: 74px;
   height: 70px;
-  background: url("../img/img-main/icon-food.svg");
+  background: url("../img/icon-food.svg");
 }
 
 .souvenirs::before {
@@ -68,7 +68,7 @@
   display: inline-block;
   width: 64px;
   height: 76px;
-  background: url("../img/img-main/icon-souvenirs.svg");
+  background: url("../img/icon-souvenirs.svg");
 }
 
 .card-light {
@@ -86,7 +86,7 @@
   color:#FFFFFF;
   width: 1200px;
   height: 411px;
-  background: #83B3D3 url("../img/img-main/subscribe-background.jpg") no-repeat;
+  background: #83B3D3 url("../img/subscribe-background.jpg") no-repeat;
 }
 
 /* Стили для каталога */
@@ -95,7 +95,7 @@
   color: #FFFFFF;
   width: 1200px;
   height: 408px;
-  background: #83B3D3 url("../img/img-catalogue/filter-background.jpg") no-repeat;
+  background: #83B3D3 url("../img/filter-background.jpg") no-repeat;
 }
 
 .subscribe-inner {
