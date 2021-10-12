@@ -41,9 +41,11 @@ body {
   color: #333333;
   margin: 0;
   min-height: 100%;
-  /* outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px; */
+}
+
+.content-container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .main-header,
@@ -65,10 +67,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 461px;
-  padding-right: 69px;
+  padding: 19px 69px 19px 0px;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .main-nav .buttons-list {
@@ -77,11 +78,11 @@ body {
   justify-content: flex-end;
   align-items: center;
   flex-basis: 459px;
-  padding-left: 69px;
+  padding: 14px 0 14px 69px;
 }
 
 .buttons-list li {
-margin: 14px 0 14px 20px;
+  margin-left: 20px;
 }
 
 .main-nav .sedona-logo {
@@ -104,7 +105,7 @@ margin: 14px 0 14px 20px;
   text-decoration: none;
   font-weight: 700;
   color: #000000;
-  margin: 20px 33px 20px 0;
+  margin-right: 33px;
 }
 
 .basic-button,
@@ -132,20 +133,19 @@ margin: 14px 0 14px 20px;
 
 .promo-welcome {
   width: 1200px;
-  height: 485px;
   background: #83B3D3 url("../img/promo-background.jpg") no-repeat;
-  overflow: auto;
+  padding: 51px 0 82px 0;
 }
 
 .promo-welcome img {
   display: block;
-  margin: 51px auto 82px auto;
+  margin: 0 auto;
 }
 
 .promo-description {
   width: 1200px;
-  height: 282px;
   background: #FFFFFF;
+  padding: 63px 20px 79px 20px;
 }
 
 .promo-description h1 {
@@ -155,12 +155,16 @@ margin: 14px 0 14px 20px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0 auto 23px auto;
+  width: 720px;
 }
 
 .promo-description p {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  margin: 0 auto;
+  width: 720px;
 }
 
 .advantages ol,
@@ -168,6 +172,12 @@ margin: 14px 0 14px 20px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.advantages-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .advantages-list h3,
@@ -184,13 +194,49 @@ margin: 14px 0 14px 20px;
   text-align: center;
 }
 
+.card-blue {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .card-blue-text {
   color: #FFFFFF;
   background: #83B3D3;
+  width: 33.33%;
+  padding-top: 98px;
+}
+
+.card-blue-picture {
+  width: 66.66%;
+}
+
+.card-blue-picture img {
+  display: block;
 }
 
 .card-blue-text h3 {
   color: #FFFFFF;
+  width: 200px;
+  margin: 0 auto 25px auto;
+}
+
+.card-text {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.card-number {
+  margin: 0 auto 26px auto;
+}
+
+.card-blue ul {
+  display: flex;
+  width: 100%;
+}
+
+.card-blue-list li {
+  width: 33.33%;
 }
 
 .card-gray {
@@ -226,13 +272,33 @@ margin: 14px 0 14px 20px;
 }
 
 .card-light {
-  background: rgba(131, 179, 211, 0.12)
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.card-common {
+  width: 33.33%;
+  padding-top: 98px;
+  padding-bottom: 77px;
+}
+
+.card-common h3 {
+  margin: 0 auto 25px auto;
+  width: 150px;
+}
+
+.card-common p {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.card-common .card-number {
+  margin: 0 auto 26px auto;
 }
 
 .hotel-search {
-  width: 1200px;
-  height: 417px;
+  width: 1058px;
   background: #FFFFFF;
+  padding: 91px 71px;
 }
 
 .hotel-search h2,
@@ -246,6 +312,7 @@ margin: 14px 0 14px 20px;
 
 .hotel-search h2 {
   color: #000000;
+  margin: 0 auto 15px auto;
 }
 
 .hotel-search p,
@@ -255,22 +322,42 @@ margin: 14px 0 14px 20px;
   text-align: center;
 }
 
+.hotel-search p {
+ width: 720px;
+ margin: 0 auto 73px auto;
+}
+
 .hotel-search .hotel-button {
+  display: block;
   font-size: 20px;
   width: 575px;
   height: 60px;
   background: #756257;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .subscribe {
   width: 1200px;
-  height: 411px;
 }
 
 .subscribe-main {
   color:#FFFFFF;
+  padding: 94px 0;
   background: #b5babd url("../img/subscribe-background.jpg") no-repeat;
+}
+
+.subscribe-main h2 {
+  margin: 0 auto 15px auto;
+}
+
+.subscribe-main p {
+  width: 500px;
+  margin: 0 auto 26px auto;
+}
+
+.subscribe-main form {
+  margin: 0 auto;
 }
 
 .subscribe .subscribe-submit {
@@ -293,10 +380,22 @@ margin: 14px 0 14px 20px;
   color:rgba(0, 0, 0, 0.6);
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 72px 30px;
+}
+
 .main-footer .social-list{
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social-item {
+  margin-right: 30px;
 }
 
 .main-footer .academy-phone {
