@@ -405,8 +405,13 @@ body {
   padding: 40px 72px 30px;
 }
 
+.main-footer-block {
+  width: 33.334%;
+}
+
 .main-footer .social-list{
   display: flex;
+  align-items: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -416,7 +421,16 @@ body {
   margin-right: 30px;
 }
 
-.main-footer .academy-phone {
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-item svg {
+  display: block;
+}
+
+.main-footer-block .academy-phone {
+  display: block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -424,26 +438,49 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  margin: 0 auto;
 }
 
 .main-footer .academy-phone:hover {
   color: #756257;
 }
 
+.main-footer-block .academy-logo {
+  display: block;
+  width: 115px;
+  margin-left: auto;
+}
+
+.academy-logo svg {
+  display: block;
+}
+
 /* Стили для каталога */
+
+/* .inner-header,
+.hotel-filter h1,
+.catalogue-filter,
+.catalogue-accept {
+  outline: 2px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -2px;
+} */
 
 .hotel-filter {
   color: #FFFFFF;
-  width: 1058px;
   background: #83B3D3 url("../img/filter-background.jpg") no-repeat;
   padding: 35px 72px 20px 72px;
 }
 
-.hotel-filter h1 {
+.inner-header {
+  margin-bottom: 45px;
+}
+
+.inner-header h1 {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 }
 
@@ -472,6 +509,16 @@ body {
 
 .catalogue-filter {
   display: flex;
+  justify-content: space-between;
+}
+
+.catalogue-filter .catalogue-group {
+  width: 196px;
+  margin-right: 20px;
+}
+
+.catalogue-filter fieldset:nth-of-type(2) {
+  width: 292px;
 }
 
 .group-title {
@@ -484,6 +531,10 @@ body {
 .catalogue-price-label {
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalogue-price {
+  width: 287px;
 }
 
 .catalogue-price-label span {
@@ -500,6 +551,9 @@ body {
   font-weight: 400;
 }
 
+.catalogue-accept {
+  align-self: center;
+}
 .catalogue-button-accept,
 .catalogue-button-reset {
   width: 160px;
@@ -622,8 +676,7 @@ body {
 
 .card-description-text {
   display: flex;
-  justify-content: space-between;
-  width: 235px;
+  justify-content: flex-start;
 }
 
 .card-description-text p {
@@ -631,16 +684,8 @@ body {
   margin: 0 0 31px 0;
 }
 
-.card-description-text p:last-child {
-  margin-right: 0;
-}
-
-.card-description-buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
 .card-description .about-button {
+  display: block;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 21px;
@@ -657,6 +702,7 @@ body {
 }
 
 .card-description .to-favourite {
+  display: block;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 21px;
@@ -721,10 +767,14 @@ body {
 }
 
 .pagination {
+  padding: 0 72px 89px 72px;
+}
+
+.pagination-block {
   display: flex;
   justify-content: space-between;
-  padding: 30px 72px 89px 72px;
   border-top: 1px solid #E6E6E6;
+  padding-top: 30px;
 }
 
 .pagination-list {
@@ -765,7 +815,7 @@ body {
 
 .subscribe-inner {
   background: #FFFFFF;
-  padding: 0 72px 137px 72px;
+  padding: 0 200px 137px 200px;
 }
 
 .subscribe-inner h2 {
@@ -778,4 +828,5 @@ body {
   margin-top: 0;
   margin-bottom: 26px;
 }
+
 
