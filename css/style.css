@@ -57,7 +57,7 @@ body {
 }
 
 .main-header {
-  padding: 0 72px;
+  padding: 0 63px;
 }
 
 .main-nav {
@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
-  padding: 19px 69px 19px 0px;
+  padding-right: 69px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -81,7 +81,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   width: 50%;
-  padding: 14px 0 14px 69px;
+  padding: 11px 0 11px 69px;
 }
 
 .buttons-list li {
@@ -93,6 +93,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index: 1;
 }
 
 .main-nav ul {
@@ -102,7 +103,8 @@ body {
 }
 
 .nav-list li {
-  margin-right: 33px;
+  margin-right: 32px;
+  padding: 19px 0 18px;
 }
 
 .nav-list li:last-child {
@@ -115,6 +117,31 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #000000;
+  border: 3px solid transparent;
+  padding: 3px 9px;
+  border-radius: 10px;
+}
+
+.nav-list a:hover {
+  color: #756257;
+}
+
+.nav-list a:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.nav-list a:focus {
+  color: #756257;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.list-item-current a {
+  text-decoration: underline;
+  text-underline-offset: 22px;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
 }
 
 .basic-button,
@@ -125,12 +152,58 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .search-button,
 .favourite-button {
+  display: flex;
+  align-items: center;
   background-color: transparent;
   border: 3px solid transparent;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.search-button:hover path,
+.favourite-button:hover path {
+  fill: #756257;
+}
+
+.search-button:focus,
+.favourite-button:focus {
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.search-button:active path,
+.favourite-button:active path {
+  fill: #756257;
+  opacity: 0.3;
+}
+
+.favourite-button {
+  position: relative;
+}
+
+.favourite-button .favourite-counter {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  background-color: #7DB550;
+  border-radius: 50%;
 }
 
 .buttons-list .wish-button {
@@ -139,6 +212,49 @@ body {
   height: 37px;
   background-color: #756257;
   border-radius: 4px;
+  box-sizing: content-box;
+  border: 3px solid transparent;
+}
+
+.wish-button:hover {
+  background-color: #615048;
+}
+
+.wish-button:focus {
+  background-color: #615048;
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.wish-button:active {
+  background-color: #615048;
+  opacity: 0.3;
+}
+
+.favourite-popup:hover .favourite-hotels {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: 0;
+}
+
+.favourite-hotels {
+  display: none;
+  width: 400px;
+  height: 232px;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+}
+
+.favourite-list .list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favourite-list .list-item-description {
+  display: flex;
 }
 
 .main-index {
@@ -146,7 +262,8 @@ body {
 }
 
 .promo-welcome {
-  width: 1200px;
+  position: relative;
+  height: 352px;
   background: #83B3D3 url("../img/promo-background.jpg") no-repeat;
   padding: 51px 0 82px 0;
 }
@@ -156,8 +273,18 @@ body {
   margin: 0 auto;
 }
 
+.promo-welcome::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  left: 50%;
+  bottom: 0;
+  background: url("../img/welcome-divider.svg") no-repeat;
+  transform: translate(-50%, 0);
+}
+
 .promo-description {
-  width: 1200px;
   background: #FFFFFF;
   padding: 63px 20px 79px 20px;
 }
@@ -374,8 +501,10 @@ body {
   margin: 0 auto 26px auto;
 }
 
-.subscribe-main form {
+.subscribe form {
   margin: 0 auto;
+  display: flex;
+  width: 800px;
 }
 
 .subscribe .subscribe-submit {
@@ -396,6 +525,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   color:rgba(0, 0, 0, 0.6);
+  border-width: 0;
+  padding: 0 22px;
 }
 
 .main-footer {

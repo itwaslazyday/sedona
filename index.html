@@ -15,7 +15,7 @@
             <img src="img/sedona-logo.svg" alt="Герб города Седона." width="138" height="70">
           </a>
           <ul class="nav-list">
-            <li class="list-item current"><a>Главная</a></li>
+            <li class="list-item list-item-current"><a>Главная</a></li>
             <li class="list-item"><a href="#">О Седоне</a></li>
             <li class="list-item"><a href="catalog.html">Гостиницы</a></li>
           </ul>
@@ -34,14 +34,58 @@
                 </svg>
               </button>
             </li>
-            <li>
+            <li class="favourite-popup">
               <button class="favourite-button" type="button">
-                <svg width="31" height="27" viewBox="0 0 31 27" role="img" aria-label="Избранные гостиницы." fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.9 27C8.6 27 8.3 26.9 8.1 26.6C2.7 20.5 1.4 19.1 1.1 18.7C0.4 17.8 0 16.6 0 15.4C0 12.4 2.4 10 5.5 10C6.8 10 8 10.5 9 11.3C10 10.5 11.3 10 12.5 10C15.5 10 18 12.4 18 15.4C18 16.7 17.5 17.9 16.7 18.8L9.7 26.7C9.5 26.9 9.3 27 8.9 27ZM2.9 17.5C3.2 17.9 6.4 21.5 9 24.4L15.2 17.4C15.7 16.9 15.9 16.2 15.9 15.4C15.9 13.6 14.4 12.1 12.6 12.1C11.6 12.1 10.6 12.6 9.9 13.4C9.6 13.7 9.3 13.8 9 13.8C8.7 13.8 8.4 13.6 8.2 13.4C7.5 12.6 6.5 12.1 5.5 12.1C3.7 12.1 2.2 13.6 2.2 15.4C2.1 16.3 2.5 17 2.9 17.5C2.8 17.5 2.8 17.5 2.9 17.5Z" fill="black"/>
-                  <path d="M31 9.5C31 14.7467 26.7467 19 21.5 19C16.2533 19 12 14.7467 12 9.5C12 4.25329 16.2533 0 21.5 0C26.7467 0 31 4.25329 31 9.5Z" fill="#7DB54F"/>
-                  <path d="M17.6308 12.26H19.0308V7.42L19.1308 6.83L18.7308 7.3L17.6308 8.09L17.2508 7.58L19.4508 5.88H19.8108V12.26H21.1808V13H17.6308V12.26ZM25.46 7.59C25.46 7.94333 25.3933 8.30667 25.26 8.68C25.1333 9.04667 24.9633 9.41667 24.75 9.79C24.5433 10.1633 24.31 10.53 24.05 10.89C23.79 11.2433 23.53 11.58 23.27 11.9L22.78 12.33V12.37L23.42 12.26H25.6V13H21.62V12.71C21.7667 12.5567 21.9433 12.3667 22.15 12.14C22.3567 11.9133 22.57 11.6633 22.79 11.39C23.0167 11.11 23.2367 10.8167 23.45 10.51C23.67 10.1967 23.8667 9.88 24.04 9.56C24.22 9.24 24.3633 8.92333 24.47 8.61C24.5767 8.29667 24.63 8 24.63 7.72C24.63 7.39333 24.5367 7.12333 24.35 6.91C24.1633 6.69 23.88 6.58 23.5 6.58C23.2467 6.58 23 6.63333 22.76 6.74C22.52 6.84 22.3133 6.95667 22.14 7.09L21.81 6.52C22.0433 6.32 22.32 6.16333 22.64 6.05C22.96 5.93667 23.3033 5.88 23.67 5.88C23.9567 5.88 24.21 5.92333 24.43 6.01C24.65 6.09 24.8367 6.20667 24.99 6.36C25.1433 6.51333 25.26 6.69667 25.34 6.91C25.42 7.11667 25.46 7.34333 25.46 7.59Z" fill="white"/>
+                <svg width="18" height="18" viewBox="0 0 18 18" role="img" aria-label="Избранные гостиницы." fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" fill="black"/>
                 </svg>
+                <span class="favourite-counter">12</span>
               </button>
+              <ul class="favourite-hotels">
+                <li class="popup-block">
+                  <ul class="favourite-list">
+                    <li class="list-item">
+                      <a class="list-item-description">
+                        <img src="img/icon-desert.png" alt="Мотель Desert Quail Inn" width="48" height="48">
+                        <div class="list-tem-text">
+                          <h3>Desert Quail Inn</h3>
+                          <p>Мотель</p>
+                        </div>
+                      </a>
+                      <button class="item-delete" type="button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.2">
+                          <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                          <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                          <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                          <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                          </g>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="list-item">
+                      <a class="list-item-description">
+                        <img src="img/icon-villas.png" alt="Апартаменты Villas at Poco Diablo" width="48" height="48">
+                        <div class="list-tem-text">
+                          <h3>Villas at Poco Diablo</h3>
+                          <p>Апартаменты</p>
+                        </div>
+                      </a>
+                      <button class="item-delete" type="button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.2">
+                          <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                          <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                          <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                          <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                          </g>
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <a class="favourite-all" href="#" aria-label="Показать все избранные">Все избранные</a>
+                </li>
+              </ul>
             </li>
             <li>
               <button class="wish-button basic-button" type="button">Хочу сюда!</button>
@@ -187,6 +231,31 @@
           </a>
         </div>
       </footer>
+
+      <div class="hotel-search-popup">
+        <div class="popup-close">
+          <h2>Поиск гостиницы в Седоне</h2>
+          <button class="popup-close-button" type="button" aria-label="Закрыть окно">X</button>
+        </div>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="arrival-date" id="arrival-date" required>
+          <label for="departure-date">Дата выезда:</label>
+          <input type="date" name="departure-date" id="departure-date" required>
+          <label for="adults">Взрослые:</label>
+          <button class="adults-reduce" type="button" aria-label="Уменьшить количество взрослых">-</button>
+          <input type="number" name="adults-quantity" id="adults" min="1" required>
+          <button class="adults-increase" type="button" aria-label="Увеличить количество взрослых">+</button>
+          <label for="children">Дети:</label>
+          <span>i</span>
+          <button class="children-reduce" type="button" aria-label="Уменьшить количество детей">-</button>
+          <input type="number" name="children-quantity" id="children" required>
+          <button class="children-increase" type="button" aria-label="Увеличить количество детей">+</button>
+          <button class="start-search" type="button" aria-label="Начать поиск гостиниц">Начать поиск</button>
+        </form>
+
+      </div>
     </div>
   </body>
 </html>
+
