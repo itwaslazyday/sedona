@@ -235,25 +235,71 @@
       <div class="hotel-search-popup">
         <div class="popup-close">
           <h2>Поиск гостиницы в Седоне</h2>
-          <button class="popup-close-button" type="button" aria-label="Закрыть окно">X</button>
+          <button class="popup-close-button" type="button" aria-label="Закрыть окно">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+            </svg>
+          </button>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="date" name="arrival-date" id="arrival-date" required>
-          <label for="departure-date">Дата выезда:</label>
-          <input type="date" name="departure-date" id="departure-date" required>
-          <label for="adults">Взрослые:</label>
-          <button class="adults-reduce" type="button" aria-label="Уменьшить количество взрослых">-</button>
-          <input type="number" name="adults-quantity" id="adults" min="1" required>
-          <button class="adults-increase" type="button" aria-label="Увеличить количество взрослых">+</button>
-          <label for="children">Дети:</label>
-          <span>i</span>
-          <button class="children-reduce" type="button" aria-label="Уменьшить количество детей">-</button>
-          <input type="number" name="children-quantity" id="children" required>
-          <button class="children-increase" type="button" aria-label="Увеличить количество детей">+</button>
-          <button class="start-search" type="button" aria-label="Начать поиск гостиниц">Начать поиск</button>
+          <div class="arrival-block block-common">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020" required>
+            <button class="choose-date" type="button">
+              <img src="img/icon-calendar.svg" alt="Выбрать дату заезда" width="15" height="15">
+            </button>
+          </div>
+          <div class="departure-block block-common">
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text" name="departure-date" id="departure-date" placeholder="1 сентября 2021" required>
+            <button class="choose-date" type="button">
+              <img src="img/icon-calendar.svg" alt="Выбрать дату выезда" width="15" height="15">
+            </button>
+          </div>
+          <div class="persons-block block-common">
+            <div class="adults-block block-common">
+              <label for="adults">Взрослые:</label>
+              <button class="adults-reduce" type="button" aria-label="Уменьшить количество взрослых">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </button>
+              <input type="number" name="adults-quantity" id="adults" min="1" required>
+              <button class="adults-increase" type="button" aria-label="Увеличить количество взрослых">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></g>
+                </svg>
+              </button>
+            </div>
+            <div class="children-block block-common">
+              <label for="children">Дети:</label>
+              <span>
+                <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_346:218)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                    <path d="M1 0H0V1H1V0Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_346:218">
+                    <rect width="1" height="9" fill="white"/></clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <button class="children-reduce" type="button" aria-label="Уменьшить количество детей">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+              </button>
+              <input type="number" name="children-quantity" id="children" required>
+              <button class="children-increase" type="button" aria-label="Увеличить количество детей">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="start-search basic-button" type="button" aria-label="Начать поиск гостиниц">Найти</button>
         </form>
-
       </div>
     </div>
   </body>
