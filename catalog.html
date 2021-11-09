@@ -142,7 +142,7 @@
           <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
             <label>
                <span class="visually-hidden">Метод сортировки:</span>
-               <select name="sorting-type">
+               <select class="select-control" name="sorting-type">
                  <option value="cheap-first" selected>Сначала дешевые</option>
                  <option value="expensive-first">Сначала дорогие</option>
                  <option value="popular-first">По популярности</option>
@@ -152,33 +152,14 @@
           </form>
           <div class="view-mode">
             <span class="visually-hidden">Режим просмотра:</span>
-            <a class="button view-tile" href="#" aria-label="Показать плиткой.">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0V6H4V0Z" fill="black"/>
-                <path d="M16 0H12V6H16V0Z" fill="black"/>
-                <path d="M10 0H6V6H10V0Z" fill="black"/>
-                <path d="M4 8H0V14H4V8Z" fill="black"/>
-                <path d="M16 8H12V14H16V8Z" fill="black"/>
-                <path d="M10 8H6V14H10V8Z" fill="black"/>
-              </svg>
+            <a class="button view-tile" href="#">
+              <img src="img/icon-tile.svg" alt="Показать плиткой.">
             </a>
-            <a class="button view-slideshow" href="#" aria-label="Показать в виде слайдшоу.">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" fill="black"/>
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-              </svg>
+            <a class="button view-slideshow" href="#">
+              <img src="img/icon-slideshow.svg" alt="Показать в виде слайдшоу.">
             </a>
-            <a class="button view-list current-view" href="#" aria-label="Показать списком.">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 0H0V2H2V0Z" fill="black"/>
-                <path d="M16 0H4V2H16V0Z" fill="black"/>
-                <path d="M2 4H0V6H2V4Z" fill="black"/>
-                <path d="M16 4H4V6H16V4Z" fill="black"/>
-                <path d="M2 8H0V10H2V8Z" fill="black"/>
-                <path d="M16 8H4V10H16V8Z" fill="black"/>
-                <path d="M2 12H0V14H2V12Z" fill="black"/>
-                <path d="M16 12H4V14H16V12Z" fill="black"/>
-              </svg>
+            <a class="button view-list current-view" href="#">
+              <img src="img/icon-list.svg" alt="Показать списком.">
             </a>
           </div>
         </section>
@@ -301,14 +282,12 @@
                 </li>
               </ul>
               <form class="cards-quantity" action="https://echo.htmlacademy.ru/" method="get">
-                <label>
-                  <span class="quantity-text">Гостиниц на странице:</span>
-                  <select name="cards-quantity">
+                <label class="quantity-text" for="cards-quantity">Гостиниц на странице:</label>
+                  <select class="select-control quantity-control" name="cards-quantity" id="cards-quantity">
                     <option value="4" selected>4</option>
                     <option value="8">8</option>
                     <option value="12">12</option>
                   </select>
-                </label>
                 <button type="submit" class="visually-hidden">Применить</button>
               </form>
             </div>
