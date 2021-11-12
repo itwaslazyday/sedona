@@ -133,11 +133,11 @@ body {
   border-radius: 10px;
 }
 
-.nav-list a:hover {
+.nav-list a[href]:hover {
   color: #756257;
 }
 
-.nav-list a:active {
+.nav-list a[href]:active {
   color: #756257;
   opacity: 0.3;
   outline: none;
@@ -1434,7 +1434,7 @@ body {
   box-sizing: border-box;
   line-height: 45px;
   opacity: 0.3;
-  z-index: -1;
+  z-index: 2;
 }
 
 .label-left {
@@ -1458,6 +1458,7 @@ body {
   font-weight: 400;
   background: transparent;
   padding: 0 17px;
+  padding-right: 35px;
   width: calc(50% - 1px);
   height: 48px;
   border: 2px solid #FFFFFF;
@@ -1483,12 +1484,14 @@ body {
   width: calc(50% + 1px);
 }
 
-.input-left:hover {
+.input-left:hover,
+.input-left:focus-visible {
   width: calc(50% + 1px);
-  border-right: 2px solid white;
+  border-right: 2px solid #FFFFFF;
 }
 
-.input-left:hover ~ .input-right {
+.input-left:hover ~ .input-right,
+.input-left:focus-visible ~ .input-right {
   width: calc(50% - 1px);
   border-left: none;
 }
@@ -1502,10 +1505,15 @@ body {
   outline: 3px solid #83B3D3;
 }
 
+.input-left:hover ~ .input-right:focus-visible {
+  width: calc(50% + 3px);
+  border-left: 2px solid #FFFFFF;
+}
+
 .catalogue-price-input:not(:placeholder-shown) {
   background: #756257;
-  outline: none;
-  box-shadow: none;
+  /* box-shadow: inset 0px 0px 0px 3px #81B3D2;
+  outline: 3px solid #83B3D3; */
 }
 
 .catalogue-accept {
@@ -1719,8 +1727,9 @@ body {
 
 .card-description-name:focus-visible {
   border-radius: 10px;
+  color: #756257;
   outline: 3px solid #83B3D3;
-  outline-offset: 5px;
+  outline-offset: 0px;
 }
 
 .card-description-name:active {
