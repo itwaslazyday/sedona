@@ -1511,9 +1511,6 @@ body {
 
 .catalogue-price-input:not(:placeholder-shown) {
   background: #756257;
-  z-index: 1;
-  /* box-shadow: inset 0px 0px 0px 3px #81B3D2;
-  outline: 3px solid #83B3D3; */
 }
 
 .catalogue-accept {
