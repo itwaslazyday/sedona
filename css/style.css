@@ -1426,7 +1426,6 @@ body {
   display: block;
   box-sizing: border-box;
   position: absolute;
-  width: 50%;
   top: 0;
   bottom: 0;
   text-align: right;
@@ -1438,7 +1437,7 @@ body {
 }
 
 .label-left {
-  left: 0;
+  right: 50%;
 }
 
 .label-right {
@@ -1448,7 +1447,6 @@ body {
 .catalogue-price-input {
   display: block;
   box-sizing: border-box;
-  z-index: 1;
   color: #FFFFFF;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -1503,6 +1501,7 @@ body {
 .catalogue-price-input:focus-visible {
   box-shadow: inset 0px 0px 0px 3px #81B3D2;
   outline: 3px solid #83B3D3;
+  z-index: 1;
 }
 
 .input-left:hover ~ .input-right:focus-visible {
@@ -1512,6 +1511,7 @@ body {
 
 .catalogue-price-input:not(:placeholder-shown) {
   background: #756257;
+  z-index: 1;
   /* box-shadow: inset 0px 0px 0px 3px #81B3D2;
   outline: 3px solid #83B3D3; */
 }
