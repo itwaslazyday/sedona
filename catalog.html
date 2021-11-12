@@ -103,9 +103,9 @@
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-list-item">
                 <a class="breadcrumbs-link" href="index.html" aria-label="Главная страница">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4 8.80006V15.0001H16V8.80006L10 3ZM15 14.0001H5V9.20005L10 4.4L15 9.20005V14.0001Z" fill="white"/>
-                    <path d="M8 13.0001H9V10.5001H11V13.0001H12V9.50005H8V13.0001Z" fill="white"/>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0.299988L0 5.79999V12H12V5.79999L6 0.299988ZM11 11H1V6.19999L6 1.69999L11 6.19999V11Z" fill="white"/>
+                    <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
                   </svg>
                 </a>
               </li>
@@ -171,14 +171,10 @@
             <fieldset class="catalogue-price">
               <legend class="group-title">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
-                <label class="catalogue-price-label">
-                  <input class="catalogue-price-input input-left" type="number" name="min-price" placeholder="0">
-                  <span>от</span>
-                </label>
-                <label class="catalogue-price-label">
-                  <input class="catalogue-price-input input-right" type="number" name="max-price" placeholder="9000">
-                  <span>до</span>
-                </label>
+                <label class="catalogue-price-label label-left" for="input-left">от</label>
+                <input class="catalogue-price-input input-left" type="number" name="min-price" id="input-left" placeholder="0">
+                <label class="catalogue-price-label label-right" for="input-right">до</label>
+                <input class="catalogue-price-input input-right" type="number" name="max-price" id="input-right" placeholder="9000">
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 227px">
@@ -204,7 +200,7 @@
             <label>
                <span class="visually-hidden">Метод сортировки:</span>
                <select class="select-control" name="sorting-type">
-                 <option value="cheap-first" selected>Сначала дешевые</option>
+                 <option value="cheap-first" selected>Сначала дешëвые</option>
                  <option value="expensive-first">Сначала дорогие</option>
                  <option value="popular-first">По популярности</option>
                </select>
@@ -310,7 +306,7 @@
               </div>
               <div class="card-rating">
                 <div class="star-amount">
-                  <img src="img/3-star.svg" alt="Три звезды." width="68" height="17">
+                  <img src="img/2-star.svg" alt="Две звезды." width="68" height="17">
                 </div>
                 <p class="rating-number">Рейтинг: 9,2</p>
               </div>
@@ -356,9 +352,10 @@
 
         <section class="subscribe subscribe-inner">
           <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-field" type="email" name="e-mail" placeholder="Ваш e-mail">
+            <input class="subscribe-field subscribe-field-invalid" type="email" name="e-mail" placeholder="Ваш e-mail">
+            <!-- .subscribe-field-invalid в случае невалидной формы -->
             <input class="subscribe-submit" type="submit" value="Подписаться">
           </form>
         </section>
