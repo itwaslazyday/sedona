@@ -242,16 +242,20 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="arrival-block block-common">
               <label for="arrival-date">Дата заезда:</label>
-              <input class="" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" required>
-              <!-- .field-invalid в случае невалидной формы -->
+              <input type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <!-- .validity-show в случае невалидной формы -->
+              <p class="validity-text validity-error validity-show">Мы не можем отправить вас в прошлое.</p>
+              <p class="validity-text">На эти даты есть свободные номера. Пока есть.</p>
               <button class="choose-date" type="button">
                 <img src="img/icon-calendar.svg" alt="Выбрать дату заезда" width="15" height="15">
               </button>
             </div>
             <div class="departure-block block-common">
               <label for="departure-date">Дата выезда:</label>
-              <input type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" required>
-              <!-- .field-invalid в случае невалидной формы -->
+              <input type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
+              <!-- .validity-show в случае невалидной формы -->
+              <p class="validity-text validity-error">Мы не можем отправить вас в прошлое.</p>
+              <p class="validity-text validity-show">На эти даты есть свободные номера. Пока есть.</p>
               <button class="choose-date" type="button">
                 <img src="img/icon-calendar.svg" alt="Выбрать дату выезда" width="15" height="15">
               </button>
@@ -264,7 +268,7 @@
                     <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                   </svg>
                 </button>
-                <input type="number" name="adults-quantity" id="adults" min="1" placeholder="2" required>
+                <input type="number" name="adults-quantity" id="adults" min="1" value="2" required>
                 <button class="button-increase" type="button" aria-label="Увеличить количество взрослых">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></g>
@@ -280,7 +284,7 @@
                     <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
                   </svg>
                 </button>
-                <input type="number" name="children-quantity" id="children" placeholder="1" required>
+                <input type="number" name="children-quantity" id="children" value="1" required>
                 <button class="button-increase" type="button" aria-label="Увеличить количество детей">
                   <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/></g>
