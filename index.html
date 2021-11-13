@@ -242,7 +242,8 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="arrival-block block-common">
               <label for="arrival-date">Дата заезда:</label>
-              <input type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" required>
+              <input class="" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" required>
+              <!-- .field-invalid в случае невалидной формы -->
               <button class="choose-date" type="button">
                 <img src="img/icon-calendar.svg" alt="Выбрать дату заезда" width="15" height="15">
               </button>
@@ -250,12 +251,13 @@
             <div class="departure-block block-common">
               <label for="departure-date">Дата выезда:</label>
               <input type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" required>
+              <!-- .field-invalid в случае невалидной формы -->
               <button class="choose-date" type="button">
                 <img src="img/icon-calendar.svg" alt="Выбрать дату выезда" width="15" height="15">
               </button>
             </div>
             <div class="persons-block block-common">
-              <div class="adults-block block-common">
+              <div class="adults-block persons-common">
                 <label for="adults">Взрослые:</label>
                 <button class="button-reduce" type="button" aria-label="Уменьшить количество взрослых">
                   <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,20 +271,10 @@
                   </svg>
                 </button>
               </div>
-              <div class="children-block block-common">
+              <div class="children-block persons-common">
                 <label for="children">Дети:</label>
-                <span>
-                  <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_346:218)">
-                      <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
-                      <path d="M1 0H0V1H1V0Z" fill="white"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_346:218">
-                      <rect width="1" height="9" fill="white"/></clipPath>
-                    </defs>
-                  </svg>
-                </span>
+                <span class="children-info"></span>
+                <p class="children-info-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 <button class="button-reduce" type="button" aria-label="Уменьшить количество детей">
                   <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
