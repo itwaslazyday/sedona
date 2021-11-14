@@ -243,7 +243,7 @@
             <div class="arrival-block block-common">
               <label for="arrival-date">Дата заезда:</label>
               <input type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
-              <!-- .validity-show в случае невалидной формы -->
+              <!--Присвоить .validity-show в зависимости от валидации формы -->
               <p class="validity-text validity-error validity-show">Мы не можем отправить вас в прошлое.</p>
               <p class="validity-text">На эти даты есть свободные номера. Пока есть.</p>
               <button class="choose-date" type="button">
@@ -253,7 +253,7 @@
             <div class="departure-block block-common">
               <label for="departure-date">Дата выезда:</label>
               <input type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
-              <!-- .validity-show в случае невалидной формы -->
+              <!-- Присвоить .validity-show в зависимости от валидации формы -->
               <p class="validity-text validity-error">Мы не можем отправить вас в прошлое.</p>
               <p class="validity-text validity-show">На эти даты есть свободные номера. Пока есть.</p>
               <button class="choose-date" type="button">
@@ -277,7 +277,7 @@
               </div>
               <div class="children-block persons-common">
                 <label for="children">Дети:</label>
-                <span class="children-info"></span>
+                <button class="children-info" type="button" aria-label="Показать дополнительную информацию"></button>
                 <p class="children-info-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 <button class="button-reduce" type="button" aria-label="Уменьшить количество детей">
                   <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">

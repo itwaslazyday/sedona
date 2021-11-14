@@ -406,7 +406,7 @@ body {
 .buttons-list .wish-button {
   font-size: 16px;
   line-height: 21px;
-  width: 160px;
+  min-width: 160px;
   background-color: #756257;
   border-radius: 4px;
   box-sizing: border-box;
@@ -658,7 +658,7 @@ body {
 .hotel-search .hotel-button {
   display: block;
   font-size: 20px;
-  width: 575px;
+  min-width: 575px;
   line-height: 36px;
   background: #756257;
   border-radius: 10px;
@@ -731,6 +731,7 @@ body {
   padding: 20px;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .popup-close-button:hover {
@@ -878,8 +879,10 @@ body {
   margin-right: auto;
 }
 
-.children-info {
+.children-block .children-info {
   display: block;
+  border: none;
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
   color: #FFFFFF;
@@ -890,6 +893,16 @@ body {
 
 .children-info:hover {
   background-color: #68A2CA;
+}
+
+.children-block .children-info:focus-visible {
+  outline: 3px solid #756257;
+  outline-offset: 0;
+}
+
+.children-block .children-info:active {
+  outline: none;
+  opacity: 0.3;
 }
 
 .children-info:hover + .children-info-popup,
@@ -1002,7 +1015,7 @@ body {
 
 .hotel-search-popup .start-search {
   display: block;
-  width: 575px;
+  min-width: 575px;
   box-sizing: border-box;
   font-size: 20px;
   line-height: 40px;
@@ -1051,7 +1064,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   padding: 17px 10px;
-  width: 200px;
+  min-width: 200px;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
 }
@@ -1600,7 +1613,7 @@ body {
 .catalogue-button-accept {
   font-size: 16px;
   line-height: 20px;
-  width: 160px;
+  min-width: 160px;
   text-transform: uppercase;
   background: #83B3D3;
   margin-bottom: 18px;
@@ -1623,7 +1636,7 @@ body {
 }
 
 .catalogue-button-reset {
-  width: 94px;
+  min-width: 94px;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1836,7 +1849,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 151px;
+  min-width: 151px;
   padding: 8px;
   background: #756257;
   border-radius: 4px;
@@ -1869,7 +1882,7 @@ body {
   padding: 8px;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 160px;
+  min-width: 160px;
   background: #83B3D3;
   border-radius: 4px;
 }
@@ -1922,8 +1935,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   text-transform: uppercase;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
   line-height: 21px;
   padding: 8px 0;
   background: #F2F2F2;
@@ -2007,8 +2019,8 @@ body {
   font-weight: 700;
   padding: 15px 0;
   color: #FFFFFF;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   background: #83B3D3;
   border-radius: 4px;
 }
@@ -2046,7 +2058,7 @@ body {
 
 .subscribe-inner {
   background: #FFFFFF;
-  padding: 0 200px 138px;
+  padding: 0 200px 137px;
 }
 
 .subscribe-inner h2 {
