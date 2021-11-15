@@ -542,6 +542,14 @@ body {
   padding: 97px 30px 30px;
 }
 
+.card-blue-text p:not(:first-of-type) {
+  margin-bottom: 21px;
+}
+
+.card-blue-text p:last-of-type {
+  margin-bottom: 0;
+}
+
 .card-blue-picture img {
   display: block;
   object-fit: cover;
@@ -608,6 +616,14 @@ body {
   margin: 0 auto;
 }
 
+.card-blue-list p {
+  margin-bottom: 21px;
+}
+
+.card-blue-list p:last-of-type {
+  margin-bottom: 0;
+}
+
 .card-common {
   padding: 98px 30px 109px;
 }
@@ -620,6 +636,14 @@ body {
 .card-common p {
   min-width: 250px;
   margin: 0 auto;
+}
+
+.card-common p:not(:first-of-type) {
+  margin-bottom: 21px;
+}
+
+.card-common p:last-of-type {
+  margin-bottom: 0;
 }
 
 .card-common .card-number {
@@ -1067,6 +1091,7 @@ body {
 .subscribe form {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribe .subscribe-submit {
@@ -1152,6 +1177,7 @@ body {
 
 .main-footer .social-list{
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   list-style: none;
   margin: 0;
@@ -1258,6 +1284,7 @@ body {
 .hotel-filter {
   color: #FFFFFF;
   background: #83B3D3 url("../img/filter-background.jpg") no-repeat;
+  background-size: cover;
   padding: 32px 72px 72px;
 }
 
@@ -1342,7 +1369,7 @@ body {
 }
 
 .catalogue-filter .catalogue-group {
-  width: 197px;
+  min-width: 197px;
   padding: 0;
   margin: 0;
   margin-right: 20px;
@@ -1354,7 +1381,7 @@ body {
 }
 
 .catalogue-filter fieldset:nth-of-type(2) {
-  width: 292px;
+  min-width: 292px;
 }
 
 .group-title {
@@ -1451,7 +1478,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  width: 287px;
+  min-width: 287px;
   margin-right: 81px;
 }
 
@@ -1702,6 +1729,7 @@ body {
   background-image: url("../img/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
+  padding-right: 44px;
   outline: none;
 }
 
@@ -1808,7 +1836,8 @@ body {
 }
 
 .card-description-name {
-  padding: 7px 12px;
+  display: inline-block;
+  padding: 0 12px;
 }
 
 .card-description-name:hover {
@@ -1840,6 +1869,10 @@ body {
   display: flex;
   justify-content: flex-start;
   padding-left: 12px;
+}
+
+.card-description-column {
+  max-width: 159px;
 }
 
 .card-description-text p {
@@ -2006,6 +2039,7 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-list li {
