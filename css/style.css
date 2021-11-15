@@ -220,8 +220,8 @@ body {
   position: absolute;
   top: 1px;
   right: -3px;
-  width: 13px;
-  height: 13px;
+  min-width: 13px;
+  min-height: 13px;
   padding: 3px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -460,7 +460,7 @@ body {
 
 .promo-description {
   background: #FFFFFF;
-  padding: 61px 20px 79px 20px;
+  padding: 61px 40px 79px;
 }
 
 .promo-description h1 {
@@ -471,7 +471,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto 33px auto;
-  width: 720px;
+  min-width: 720px;
 }
 
 .promo-description p {
@@ -479,7 +479,7 @@ body {
   line-height: 37px;
   text-align: center;
   margin: 0 auto;
-  width: 720px;
+  min-width: 720px;
 }
 
 .advantages ol,
@@ -502,6 +502,7 @@ body {
 
 .first-line .card-blue-picture {
   grid-column: span 2;
+  background-color: #83B3D3;
 }
 
 .card-blue-list {
@@ -518,6 +519,7 @@ body {
 
 .second-line .card-blue-picture {
   grid-column: span 2;
+  background-color: #83B3D3;
 }
 
 .advantages-list h3,
@@ -537,11 +539,12 @@ body {
 .card-blue-text {
   color: #FFFFFF;
   background: #83B3D3;
-  padding-top: 97px;
+  padding: 97px 30px 30px;
 }
 
 .card-blue-picture img {
   display: block;
+  object-fit: cover;
 }
 
 .card-blue-text h3 {
@@ -560,7 +563,7 @@ body {
 }
 
 .card-blue-list li {
-  padding: 81px 0 90px 0;
+  padding: 81px 30px 90px;
   text-align: center;
 }
 
@@ -606,17 +609,16 @@ body {
 }
 
 .card-common {
-  padding-top: 98px;
-  padding-bottom: 109px;
+  padding: 98px 30px 109px;
 }
 
 .card-common h3 {
   margin: 0 auto 27px auto;
-  width: 150px;
+  min-width: 150px;
 }
 
 .card-common p {
-  width: 250px;
+  min-width: 250px;
   margin: 0 auto;
 }
 
@@ -625,7 +627,6 @@ body {
 }
 
 .hotel-search {
-  width: 1058px;
   background: #FFFFFF;
   padding: 89px 71px 91px;
 }
@@ -652,8 +653,8 @@ body {
 }
 
 .hotel-search p {
- width: 720px;
- margin: 0 auto 59px auto;
+  min-width: 720px;
+  margin: 0 auto 59px auto;
 }
 
 .hotel-search .hotel-button {
@@ -953,9 +954,11 @@ body {
   border: 3px solid transparent;
   font: inherit;
   text-align: center;
+  appearance: textfield;
 }
 
-.persons-block input::-webkit-inner-spin-button {
+.persons-block input::-webkit-inner-spin-button,
+.persons-block input::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
@@ -1048,7 +1051,7 @@ body {
 
 .subscribe-main {
   color:#FFFFFF;
-  padding: 92px 0 94px;
+  padding: 92px 30px 94px;
   background: #b5babd url("../img/subscribe-background.jpg") no-repeat;
 }
 
@@ -1057,7 +1060,7 @@ body {
 }
 
 .subscribe-main p {
-  width: 500px;
+  min-width: 500px;
   margin: 0 auto 47px auto;
 }
 
@@ -1091,8 +1094,8 @@ body {
 }
 
 .subscribe .subscribe-field {
-  width: 600px;
-  height: 60px;
+  min-width: 600px;
+  min-height: 60px;
   box-sizing: border-box;
   background: #F2F2F2;
   border-radius: 10px 0px 0px 10px;
@@ -1152,9 +1155,7 @@ body {
   align-items: flex-end;
   list-style: none;
   margin: 0;
-  padding: 0;
-  padding-left: 12px;
-  padding-top: 1px;
+  padding: 1px 0 0 12px;
 }
 
 .social-item {
@@ -1551,6 +1552,7 @@ body {
   width: calc(50% - 1px);
   height: 48px;
   border: 2px solid #FFFFFF;
+  appearance: textfield;
 }
 
 .catalogue-price-input::-webkit-outer-spin-button,
