@@ -156,6 +156,10 @@ body {
   text-decoration-thickness: 2px;
 }
 
+.buttons-list button {
+  margin: 0;
+}
+
 .basic-button,
 .subscribe-submit {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -933,21 +937,16 @@ body {
 
 .children-info:hover + .children-info-popup,
 .children-info:hover + .children-info-popup:before {
-  transition: opacity 1s linear 0s;
-  opacity: 1;
-  /* display: block; */
+  display: block;
 }
 
 .children-info:focus-visible + .children-info-popup,
 .children-info:focus-visible + .children-info-popup:before {
-  transition: opacity 1s linear 0s;
-  opacity: 1;
-  /* display: block; */
+  display: block;
 }
 
 .children-info-popup {
-  opacity: 0;
-  /* display: none; */
+  display: none;
   box-sizing: border-box;
   position: absolute;
   width: 256px;
@@ -962,13 +961,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  transition: opacity 1s linear 0s;
 }
 
 .children-info-popup:before {
-  opacity: 0;
   content: "";
-  /* display: none; */
+  display: none;
   position: absolute;
   top: -6px;
   right: 122px;
@@ -976,7 +973,6 @@ body {
   height: 13px;
   background-color: #333333;;
   transform: rotate(45deg);
-  transition: opacity 1s linear 0s;
 }
 
 .persons-block input {
@@ -1140,6 +1136,7 @@ body {
   color:rgba(0, 0, 0, 0.6);
   border: 3px solid transparent;
   padding: 0 19px;
+  margin: 0;
 }
 
 .subscribe .subscribe-field:hover {
